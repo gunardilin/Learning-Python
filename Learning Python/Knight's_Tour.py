@@ -7,7 +7,8 @@ Created on 24.05.2020
 https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/ .
 With this code, I would like to learn "Backtracking Algorithm".
 I applied modifications to the original code."""
-import datetime
+import time
+
 n = 5
  
 def isSafe(nextX, nextY, board):
@@ -55,8 +56,6 @@ def solveKTUtil(n, board, moveX, moveY, currX, currY, step):
     return False 
      
 if __name__ == "__main__":
-    startTime = datetime.datetime.now()
+    start = time.time()
     solveKT(n)
-    endTime = datetime.datetime.now()
-    duration = endTime - startTime
-    print(duration.total_seconds())
+    print("\n" + 'Duration: {} seconds'.format(time.time() - start))
