@@ -24,7 +24,7 @@ def printSolution(n, board):
         print()
 
 def solveKT(n):
-    board = [[-1 for i in range(n)]for i in range(n)]
+    board = [[-1 for _ in range(n)]for _ in range(n)]
     startX = 0
     startY = 0
     step = 0
