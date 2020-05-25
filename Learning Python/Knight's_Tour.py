@@ -9,7 +9,7 @@ With this code, I would like to learn "Backtracking Algorithm".
 I applied modifications to the original code."""
 import time
 
-n = 5
+n = 6
  
 def isSafe(nextX, nextY, board):
     if 0<=nextX<n and 0<=nextY<n:
