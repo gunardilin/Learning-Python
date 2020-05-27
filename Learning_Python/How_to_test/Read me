@@ -32,4 +32,16 @@ failure.
 test_good0.py: 
 Fortunately there are great tools in python, that can be used for unit test.
 The module to test calls "pytest".
+To perform the pytest on terminal, you have to first using "cd" command to 
+navigate to the folder, where the test file located.
+Now by typing in "pytest", the terminal will execute all testfiles with prefix:
+test_... 
+All test functions should start with test_... as well for pytest to recognize 
+and run them.
+Warning: avoid using a space in name files or folders, because the terminal
+cannot find files or folder with spaces as name.
+Best practice for the test file:
+It's wise to use only an assert command for each test function. Otherwise you
+wouldn't know how many tests failed and which test failed.
+Since what we see is only which test functions failed.
 
