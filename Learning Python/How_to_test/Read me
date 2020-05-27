@@ -1,0 +1,35 @@
+In this folder "How to test", there are many files to perform a unit test for 
+python file "nearest.py".
+
+Bad_test0.ipynb :
+The unit test starts with the worse possible method: "Bad_test0.ipynb".
+The file is a Jupyter notebook and in it the function "nearest_square" from 
+"nearest.py" will be tested one by one manually.
+While this does test the function, it's still a poor way to test because it 
+isn't repeatable, requires you to type these in manually and doesn't tell you if
+it's returning the correct answer.
+
+bad_test1.py:
+This is better because the test code is now on a file that can be run repeated
+without much work.
+But it's still not telling you wheter the function is returning the right 
+answers. Therefore you still have to check manually. Still pretty slow.
+
+bad_test2.py:
+This is better than previous file, because at least you know what the correct 
+answer is. But it is not ideal, because you still have to compare manually the 
+returned answer with the correct answer.
+
+bad_test3.py:
+The "assert" is used in this file to ensure that the returned answer is
+identical to the correct answer. This is much better, since it checks the result
+automatically. However, when something fails i.e. the returned answer is not 
+identical to the correct answer, it stops the programm. The result is messy.
+Ideally the test should run all the test programm and let you know which one 
+failed and which one succeeded. This can't happen if it's stop with every 
+failure. 
+
+test_good0.py: 
+Fortunately there are great tools in python, that can be used for unit test.
+The module to test calls "pytest".
+
